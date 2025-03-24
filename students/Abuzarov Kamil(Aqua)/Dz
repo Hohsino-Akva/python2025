@@ -1,0 +1,7 @@
+from re import compile as compile_, IGNORECASE
+ 
+ 
+pattern = compile_("крут\w*", IGNORECASE)
+x = "Круто, Крутейший, крутина, крут, фыфыф, авваа"
+result = pattern.sub(lambda mo: mo.group().upper(), x)
+print(result)
