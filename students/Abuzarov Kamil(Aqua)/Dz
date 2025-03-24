@@ -1,0 +1,5 @@
+def pretty_print(objects, side='-', delimiter='|'):
+    line = f'{delimiter} {(" " + delimiter + " ").join(str(item) for item in objects)} {delimiter}'
+    print(f' {side * (len(line) - 2)}')
+    print(line)
+    print(f' {side * (len(line) - 2)}')
